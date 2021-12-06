@@ -27,6 +27,10 @@ extern uint8_t ScaleFlag; // <- ScaleFlag needs to visible in order for the emul
 /*----------------------------------------------------------------------------
   Main Program
  *----------------------------------------------------------------------------*/
+ 
+extern uint8_t curr_value;
+extern uint8_t old_value;
+
 int main (void) {
   
   SystemInit();  												/* System Initialization (i.e., PLL)  */
