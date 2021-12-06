@@ -29,7 +29,7 @@ extern uint8_t ScaleFlag; // <- ScaleFlag needs to visible in order for the emul
  *----------------------------------------------------------------------------*/
  
 extern uint8_t curr_value;
-extern uint8_t old_value;
+//extern uint8_t old_value;
 
 int main (void) {
   
@@ -37,7 +37,8 @@ int main (void) {
   LED_init();                           /* LED Initialization                 */
   BUTTON_init();												/* BUTTON Initialization              */
 	
-  while (1) {                           /* Loop forever                       */	
+	LED_Out(curr_value);
+  while (1) {                           /* Loop forever                       */
   }
 
 }
